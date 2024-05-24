@@ -1,0 +1,64 @@
+{% include "nav.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Complaint</title>
+    <style>
+      
+        .bttn{
+            background-color: white;
+  
+  color: green;
+  padding: 10px 27px;
+  text-align: center;
+  
+  border-radius:25 px;
+  
+  font-size: 16px;
+  border:2px solid green;
+  
+        }
+        button:hover{
+            background-color:darkgreen;
+            color:white;
+
+        }
+        .container{
+            display:flex;
+            justify-content:space-between;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          button{
+            border-radius:5px;
+          }
+          h4{
+            text-align:center;
+
+          }
+    </style>
+</head>
+<body>
+    <h1>Register Complaint</h1>
+    <div class="container">
+        <div class="Complaint">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="bttn">Submit</button>
+    </form>
+</div>
+<div class= "sometext">
+    <h2>Feel Free to Register Your Complaint</h2>
+                <p>If you have any issues or concerns, please let us know. We're here to help!</p>
+                <img src="static/images/nepal-government.png" alt="image">
+                <h4>देश रा जनता को हिट का लगी</h4>
+</div>
+
+</div>
+</body>
+</html>

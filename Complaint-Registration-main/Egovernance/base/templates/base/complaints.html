@@ -1,0 +1,47 @@
+{% include "nav.html" %}
+{% load static %}
+<style>
+    .complaint-image {
+        max-width: 100px; /* Adjust the maximum width of the image as needed */
+        height: auto;
+    }
+</style>
+{% block content %}
+    <table  class="table">
+        <thead>
+            <tr>
+                <th scope="col">Complaint Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Complaint Description</th>
+                <th scope="col">Complaint Image</th>
+                <th scope="col">Complaint status</th>
+            </tr>
+        </thead>
+         <tbody class="table-group-divider">
+            {% for item in complaint %}
+            <tr scope="row">
+                <td>{{ item.name }}</td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.description }}</td>
+             
+                    <td>
+                        {% if item.image %}
+                            <img src="{{ item.image.url }}" alt="{{ item.name }}" class="complaint-image">
+                        {% else %}
+                            <p>No image available</p>
+                        {% endif %}
+                    </td>
+                    
+            
+                
+                </td>
+                {% if item.action_taken is False %}
+                <td>Action Not Taken</td>
+                {% else %}
+                <td>Your response has been monitored <br>and possible action will be taken against it.</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

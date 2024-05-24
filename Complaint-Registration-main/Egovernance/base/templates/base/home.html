@@ -1,0 +1,119 @@
+{% include "nav.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .caption {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 24px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="slideshow-container">
+        <div class="caption"><h1>परिचय</h1>
+            <p>
+              नेपालमा २००७ सालको राजनैतिक परिवर्तन पश्चात् देशको आन्तरिक कार्यको
+              व्यवस्थापन हेर्ने गरी वि.सं. २००८ सालमा गृह मन्त्रालयको स्थापना भयो।
+              वि.सं. २०१७ सालको परिवर्तन पछि गृह मन्त्रालयको नाम परिवर्तन गरी गृह
+              पञ्चायत मन्त्रालय बनाईयो र नेपाललाई १४ अञ्चल ७५ जिल्लामा विभाजन गरी
+              अंचलाधीश र प्रमुख जिल्ला अधिकारीको व्यवस्था भयो। स्थानीय प्रशासन ऐन,
+              २०२८ प्रारम्भ भएपछि अंचलाधीश र प्र.जि.अ.को काम कर्तव्य र अधिकार कानुनी
+              रुपमा व्यवस्थित गरियो। वि.सं. २०३७ सालमा गृह मन्त्रालयबाट पञ्चायत
+              सम्वन्धी काम छुट्याई सो सम्वन्धी काम हेर्ने छुट्टै स्थानीय विकास
+              मन्त्रालयको गठन भएपछि गृह मन्त्रालयको मूख्य कार्यभार शान्ति सुव्यवस्था
+              र स्थानीय प्रशासन भयो। नेपालको संविधान २०७२ जारी भै ७७ जिल्ला कायम
+              भएबमोजिम मन्त्रालय अन्तर्गत ७७ जिल्ला प्रशासन कार्यालयहरु, ७७ ईलाका
+              प्रशासन कार्यालयहरु र ७ सिमा प्रशासन कार्यालयहरु रहेका छन् ।
+              <br />
+              <br />
+              <br />
+              ”मुलुकमा शान्ति सुव्यवस्था र सुरक्षा कायम गरी जनताको जिउ धन र
+              स्वतन्त्रताको संरक्षण गर्नु” गृह प्रशासनको मुख्य उद्देश्य हो। गृह
+              प्रशासनलाई सबल र सक्षम बनाई जनतामा सुरक्षाको अनुभूति दिलाउन र सेवा
+              प्रवाहलाई प्रभावकारी बनाइ सुशासन कायम गर्न हाल गृह मन्त्रालय मातहत
+              राष्ट्रिय परिचयपत्र तथा पञ्जिकरण विभाग, अध्यागमन विभाग,कारागार
+              व्यवस्थापन विभाग,राष्ट्रिय विपद् जोखिम न्यूनीकरण तथा व्यवस्थापन
+              प्राधिकरण, जिल्ला प्रशासन कार्यालय , इलाका प्रशासन कार्यालय, सीमा
+              प्रशासन कार्यालय तथा सुरक्षा निकायका रुपमा नेपाल प्रहरी, सशस्त्र
+              प्रहरी वल, नेपाल लगायतका निकायहरु केन्द्रदेखि स्थानीय तहसम्म क्रियाशील
+              रहेका छन्।
+            </p>
+            <h3>दृष्टिकोण</h3>
+      
+            नेपालको प्रचलित संविधान तथा कानुनद्वारा प्रत्याभूत नागरिक स्वतन्त्रता,
+            विधिको शासन, मानव अधिकार लगायत लोकतान्त्रिक मूल्य र मान्यतालाई सम्मान
+            गर्ने गरी कार्य गर्नु गृह प्रशासनको दृष्टिकोण हो।
+      
+            <h3>लक्ष्य</h3>
+      
+            जनताको माग र आधारभूत आवश्यकता अनुरूप गृह प्रशासनलाई सञ्चालन गरी देशमा
+            भरपर्दो शान्ति सुरक्षा प्रदान गर्नु गृह प्रशासनको लक्ष्य रहेको छ।
+      
+            <h3>उद्देश्य</h3>
+      
+            शान्ति सुव्यवस्था र सुरक्षा कायम गरी जनताको जिउ, धन र स्वतन्त्रताको
+            संरक्षण गर्नु गृह मन्त्रालयको मूलभूत उद्देश्य हो।</div>
+        <img src="{% static 'images/baudha.jpg' %}" alt="baudha" class="active">
+        <img src="{% static 'images/bhaktapur.jpg' %}" alt="bhaktapur">
+        <img src="{% static 'images/janaki-temple.jpg' %}" alt="janki-temple">
+        <img src="{% static 'images/pashupatinath.jpg' %}" alt="pashupatinath">
+        <img src="{% static 'images/patan-durbar.jpg' %}" alt="patan-durbar">
+        <img src="{% static 'images/boudha.jpg' %}" alt="boudha">
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow-container img');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+            });
+
+            slideIndex++;
+            if (slideIndex > totalSlides) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides();
+    </script>
+
+</body>
+</html>
