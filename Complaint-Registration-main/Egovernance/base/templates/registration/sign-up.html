@@ -15,6 +15,7 @@
         <div class="login-container">
             <form action="{% url 'signup' %}" method="POST" novalidate>
                 {% csrf_token %}
+                <div class="form-group d-flex justify-content-center"><img src="{% static 'images/nepal-government.png' %}" alt="image"> </div>
                 {% if form.errors %}
                     <div class="alert alert-danger">
                         <ul>

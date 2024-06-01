@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Complaint
 # Create your views here.
 def home(request):
+    
     return render(request,'base/home.html')
 def signup(request):
     return render(request,"base/signup.html")
@@ -48,11 +49,12 @@ def signup(request):
         return render(request,"registration/sign-up.html",{
                                         "form":form
                                             })
+
 def view_complaint(request):
     complaint=Complaint.objects.all()
     print(complaint)
-    return render(request,'base\complaints.html',{
-        "complaint":complaint,
+    return render(request,'base/complaints.html',{
+        "complaint":complaint
     })
 @login_required
 def register_complaint(request):
@@ -65,3 +67,4 @@ def register_complaint(request):
     else:
         form = ComplaintForm()
     return render(request, 'base/add_complaint.html', {'form': form})
+

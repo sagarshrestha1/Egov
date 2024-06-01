@@ -20,7 +20,7 @@ choice=(
 class Complaint(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=False, default='')
-
+    email=models.EmailField(default='')
     description = models.TextField()
     category = models.CharField(max_length=100,choices=choice)
     image = models.ImageField(upload_to='image/', blank=True,null=True)
